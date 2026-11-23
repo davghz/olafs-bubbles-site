@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  --ink: #362921;
+  --pine: #2e5245;
+  --cream: #fff7df;
+  --paper: #fffcf3;
+  --border: #d7c6a2;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  box-sizing: border-box;
+  max-width: 48rem;
+  margin: auto;
+  padding: clamp(1rem, 5vw, 3rem);
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wordmark {
+  font: bold italic clamp(1.6rem, 5vw, 2.1rem) / 1.1 Baskerville, Georgia, serif;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+nav [aria-current="page"] {
+  font-weight: 700;
+}
+
+a {
+  color: var(--pine);
+  overflow-wrap: anywhere;
+  text-underline-offset: 0.18em;
+}
+
+a:focus-visible {
+  outline: 0.16rem solid var(--pine);
+  outline-offset: 0.2rem;
+}
+
+main {
+  padding: clamp(1.25rem, 5vw, 2.5rem);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: var(--paper);
+}
+
+h1,
+h2 {
+  font-family: Baskerville, Georgia, serif;
+  line-height: 1.15;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.3rem, 7vw, 3.25rem);
+}
+
+h2 {
+  margin: 1.6rem 0 0.4rem;
+  font-size: 1.5rem;
+}
+
+p, dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 0 0.75rem;
+}
+
+dd:last-child {
+  margin-bottom: 0;
+}
