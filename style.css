@@ -59,7 +59,9 @@ a {
   text-underline-offset: 0.18em;
 }
 
-a:focus-visible {
+a:focus-visible,
+summary:focus-visible,
+video:focus-visible {
   outline: 0.16rem solid var(--pine);
   outline-offset: 0.2rem;
 }
@@ -72,7 +74,8 @@ main {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: Baskerville, Georgia, serif;
   line-height: 1.15;
 }
@@ -85,6 +88,26 @@ h1 {
 h2 {
   margin: 1.6rem 0 0.4rem;
   font-size: 1.5rem;
+}
+
+h3 {
+  margin: 1.1rem 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+video {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background: var(--ink);
+}
+
+.video-link,
+details {
+  margin-top: 0.35rem;
 }
 
 p, dl {
